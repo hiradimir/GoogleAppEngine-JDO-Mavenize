@@ -7,10 +7,23 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title></title>
-  </head>
-  <body>
+<head>
+  <link href="css/application.css" rel="stylesheet" />
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/logger.js"></script>
+  <script src="js/hoge.js"></script>
 
-  </body>
+
+  <title></title>
+</head>
+<body>
+<h1>sample gae page</h1>
+<div>
+  <input type="button" id="testAjax" value="Test Ajax"></div>
+</div>
+
+<div id="log"></div>
+
+
+</body>
 </html>
