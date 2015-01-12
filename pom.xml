@@ -2,11 +2,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-    <groupId>jp.enrapt.yutaka</groupId>
-    <artifactId>GAE-Sample</artifactId>
-    <version>1.0-SNAPSHOT</version>
+  <groupId>jp.enrapt.yutaka</groupId>
+  <artifactId>GAE-Sample</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.google.appengine</groupId>
+        <artifactId>appengine-maven-plugin</artifactId>
+        <version>1.9.17</version>
+        <configuration>
+          <enableJarClasses>false</enableJarClasses>
+          <port>8181</port>
+          <address>0.0.0.0</address>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
   <dependencies>
     <dependency>
       <groupId>org.springframework</groupId>
