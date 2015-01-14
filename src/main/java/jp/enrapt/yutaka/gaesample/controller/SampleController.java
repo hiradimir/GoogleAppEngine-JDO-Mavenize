@@ -1,5 +1,7 @@
 package jp.enrapt.yutaka.gaesample.controller;
 
+import com.google.appengine.api.datastore.Key;
+import com.google.appengine.api.datastore.KeyFactory;
 import jp.enrapt.yutaka.gaesample.PMF;
 import jp.enrapt.yutaka.gaesample.model.Sample;
 import org.springframework.stereotype.Component;
@@ -28,8 +30,30 @@ public class SampleController {
         return "Sample/new";
     }
 
+    Sample getByKey(String key){
+        PersistenceManager pm = PMF.persistenceManager();
+        
+
+        Sample sample = pm.getObjectById(Sample.class, key);
+        return sample;
+    }
+    
+    @RequestMapping(value = "/{key}", method= RequestMethod.GET, headers = {"Accept=application/json"})
+    @ResponseBody
+    public Object getSampleJson(@PathVariable String key){
+        PersistenceManager pm = PMF.persistenceManager();
+
+        Sample sample = getByKey(key);
+        if(sample == null){
+            throw new RuntimeException("Sample Not Found");
+        }
+
+        return sample;
+    }
+    
     @RequestMapping(value = "/{key}", method= RequestMethod.GET)
     public String getSample(@PathVariable String key, ModelMap model){
+
         return "Sample/get";
     }
 
