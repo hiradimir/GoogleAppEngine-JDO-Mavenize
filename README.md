@@ -10,6 +10,11 @@ This project is backup and GAE-Maven sample.
 $ mvn clean compile appengine:enhance package appengine:devserver
 ```
 
+### deploy
+
+```bash
+$ mvn appengine:update
+```
 
 ### Tips
 
