@@ -17,18 +17,18 @@
     <title></title>
 </head>
 <body>
-<h1>sample gae page</h1>
+<h1>Sample added</h1>
 
 <div>
 
     <table>
         <tr>
             <td>UserName :</td>
-            <td></td>
+            <td>${sample.name}</td>
         </tr>
         <tr>
             <td>Email :</td>
-            <td></td>
+            <td>${sample.email}</td>
         </tr>
     </table>
 </div>

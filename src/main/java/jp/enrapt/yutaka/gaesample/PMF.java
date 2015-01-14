@@ -21,10 +21,10 @@ public final class PMF {
     public static PersistenceManager persistenceManager() {
         return pmfInstance.getPersistenceManager();
     }
-    
-    
+
+
     public static class CRUD{
-        
+
     }
     
 }
