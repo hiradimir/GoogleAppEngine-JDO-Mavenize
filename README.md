@@ -1,6 +1,6 @@
 # GoogleAppEngine-JDO-Mavenize
 
-I had many trouble when tried mavenize GAE with JDO.
+I had many trouble when tried mavenize GAE with JDO.  
 This project is backup and GAE-Maven sample.
 
 
