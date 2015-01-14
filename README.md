@@ -18,3 +18,7 @@ $ mvn clean compile appengine:enhance package appengine:devserver
   * same version IDE plugin uses if you use Intellij IDEA ( or eclipse? )
     * and if you use Run from Intellij IDEA.
 
+### An addition
+
+* Spring MVC built-in
+  * simple crud controller sample
