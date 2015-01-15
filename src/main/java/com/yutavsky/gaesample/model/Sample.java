@@ -1,4 +1,4 @@
-package jp.enrapt.yutaka.gaesample.model;
+package com.yutavsky.gaesample.model;
 
 import com.google.appengine.api.datastore.Key;
 

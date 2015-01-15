@@ -1,10 +1,7 @@
-package jp.enrapt.yutaka.gaesample.controller;
+package com.yutavsky.gaesample.controller;
 
-import com.google.appengine.api.datastore.Key;
-import com.google.appengine.api.datastore.KeyFactory;
-import jp.enrapt.yutaka.gaesample.PMF;
-import jp.enrapt.yutaka.gaesample.model.Sample;
-import org.springframework.stereotype.Component;
+import com.yutavsky.gaesample.PMF;
+import com.yutavsky.gaesample.model.Sample;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.jdo.PersistenceManager;
-import javax.jdo.PersistenceManagerFactory;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 
