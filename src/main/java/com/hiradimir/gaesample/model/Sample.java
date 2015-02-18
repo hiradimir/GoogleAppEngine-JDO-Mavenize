@@ -1,4 +1,4 @@
-package com.yutavsky.gaesample.model;
+package com.hiradimir.gaesample.model;
 
 import com.google.appengine.api.datastore.Key;
 

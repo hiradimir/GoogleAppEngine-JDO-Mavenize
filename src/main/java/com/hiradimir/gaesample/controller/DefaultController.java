@@ -1,4 +1,4 @@
-package com.yutavsky.gaesample.controller;
+package com.hiradimir.gaesample.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

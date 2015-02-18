@@ -1,4 +1,4 @@
-package com.yutavsky.gaesample;
+package com.hiradimir.gaesample;
 
 import javax.jdo.JDOHelper;
 import javax.jdo.PersistenceManager;

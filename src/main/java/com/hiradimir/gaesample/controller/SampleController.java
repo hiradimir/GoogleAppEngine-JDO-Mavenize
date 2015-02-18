@@ -1,7 +1,7 @@
-package com.yutavsky.gaesample.controller;
+package com.hiradimir.gaesample.controller;
 
-import com.yutavsky.gaesample.PMF;
-import com.yutavsky.gaesample.model.Sample;
+import com.hiradimir.gaesample.PMF;
+import com.hiradimir.gaesample.model.Sample;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
